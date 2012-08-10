@@ -4,9 +4,60 @@ $gutter : 3em;
 // for smaller gutters
 $half-gutter : $gutter / 2;
 
+
+// core grid configuration
+@mixin grid-config {
+
+	.grid-wrap {    
+	    margin-left: -$gutter; /* the same as your gutter */
+	    overflow: hidden;
+	    clear: both; }
+	   
+	.grid-col {
+	    float: left;
+	    padding-left: $gutter; /* this is your gutter between columns */
+	    width: 100%;
+	    -webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box; }
+	
+	.half-gutter {
+		margin-left: -$half-gutter;
+	
+		.grid-col {
+			padding-left: $half-gutter; }
+	
+	}	
+
+}	
+
 // set the proportions you want to use
 // namespace relates to the class prefix e.g. mq2-col to target media query 2
 @mixin setup-grid($namespace) {
+
+	/* -- Set up your grids -- */	
+		
+	.grid-wrap {    
+	    margin-left: -$gutter; /* the same as your gutter */
+	    overflow: hidden;
+	    clear: both; }
+	   
+	.grid-col {
+	    float: left;
+	    padding-left: $gutter; /* this is your gutter between columns */
+	    width: 100%;
+	    -webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box; }
+	
+	.half-gutter {
+		margin-left: -$half-gutter;
+	
+		.grid-col {
+			padding-left: $half-gutter; }
+	
+	}	
+
 	.#{$namespace}-full         	{ width: 100%; }
 	.#{$namespace}-one-half         { width: 50%; }
 	.#{$namespace}-one-third        { width: 33.333%; }

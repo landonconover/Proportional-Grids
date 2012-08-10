@@ -3,7 +3,7 @@ Author  : Boon
 URL     : http://builtbyboon.com
 Twitter	: http://twitter.com/mattberridge
 ---------------------------------------*/
-@import "mixins";
+@import "grids";
 
 body {
 	margin: 0;
@@ -53,31 +53,10 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 	
 }
 	
-/* -- Set up your grids -- */	
-	
-.grid-wrap {    
-    margin-left: -$gutter; /* the same as your gutter */
-    overflow: hidden;
-    clear: both; }
-   
-.grid-col {
-    float: left;
-    padding-left: $gutter; /* this is your gutter between columns */
-    width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box; }
-
-.half-gutter {
-	margin-left: -$half-gutter;
-
-	.grid-col {
-		padding-left: $half-gutter; }
-
-}	
-			
-/* -- If you want any columns to begin with -- */
-			
+/* -- Set up your grids -- */
+@include grid-config;	
+		
+/* -- If you want any columns to begin with -- */		
 @include setup-grid($namespace: col);
 
 /* -- Media query 1 (mq1)
