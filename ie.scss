@@ -3,12 +3,12 @@ Author  : Boon
 URL     : http://builtbyboon.com
 Twitter	: http://twitter.com/mattberridge
 ---------------------------------------*/
-@import "mixins";
+@import "grids";
 
 // repeat for each set of grids you have
-@include setup-grid($namespace: mq1-col);
-@include setup-grid($namespace: mq2-col);
-@include setup-grid($namespace: mq3-col);
+@include setup-grid("mq1-col");
+@include setup-grid("mq2-col");
+@include setup-grid("mq3-col");
 
 /* -- Fix old IE
 ------------------------------------------------------------- */			
@@ -17,7 +17,7 @@ Twitter	: http://twitter.com/mattberridge
 	
 @include fix-oldie();
 // repeat for each set of grids you have
-@include oldie-grid($namespace: "oldie .col");
-@include oldie-grid($namespace: "oldie .mq1-col");
-@include oldie-grid($namespace: "oldie .mq2-col");
-@include oldie-grid($namespace: "oldie .mq3-col");
+@include oldie-grid("oldie .col");
+@include oldie-grid("oldie .mq1-col");
+@include oldie-grid("oldie .mq2-col");
+@include oldie-grid("oldie .mq3-col");
