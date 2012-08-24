@@ -1,19 +1,27 @@
-// this is the fixed gutter between columns
-$gutter : 3em;
+//-------------------------------------------------------
+// GRID SETTINGS
+//-------------------------------------------------------
 
-// for smaller gutters
+// this is the fixed gutter between columns
+$gutter: 3em;
+
+// this sets your class names
+$grid-wrap-class: grid-wrap;
+$grid-col-class: grid-col;
+
+//-------------------------------------------------------
+// GRID MIXINS
+//-------------------------------------------------------
 $half-gutter : $gutter / 2;
 
-
-// core grid configuration
 @mixin grid-config {
 
-	.grid-wrap {    
+	.#{$grid-wrap-class} {    
 	    margin-left: -$gutter; /* the same as your gutter */
 	    overflow: hidden;
 	    clear: both; }
 	   
-	.grid-col {
+	.#{$grid-col-class} {
 	    float: left;
 	    padding-left: $gutter; /* this is your gutter between columns */
 	    width: 100%;
@@ -24,7 +32,7 @@ $half-gutter : $gutter / 2;
 	.half-gutter {
 		margin-left: -$half-gutter;
 	
-		.grid-col {
+		.#{$grid-col-class} {
 			padding-left: $half-gutter; }
 	
 	}	
@@ -48,10 +56,10 @@ $half-gutter : $gutter / 2;
 @mixin grid-oldie-config {
 
 	.oldie {
-		.grid-wrap {
+		.#{$grid-wrap-class} {
 			margin-left: 0; }
 		
-		.grid-col {
+		.#{$grid-col-class} {
 			padding: 0;
 			margin-left: 5%;
 			
