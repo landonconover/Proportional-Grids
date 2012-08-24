@@ -66,6 +66,27 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
     padding-left: 1.5em; }
 
 /* -- If you want any columns to begin with -- */
+/* -- Set up your grids -- */
+.grid-wrap {
+  margin-left: -3em;
+  /* the same as your gutter */
+  overflow: hidden;
+  clear: both; }
+
+.grid-col {
+  float: left;
+  padding-left: 3em;
+  /* this is your gutter between columns */
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.half-gutter {
+  margin-left: -1.5em; }
+  .half-gutter .grid-col {
+    padding-left: 1.5em; }
+
 .col-full {
   width: 100%; }
 
@@ -87,60 +108,123 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 /* -- Media query 1 (mq1)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 30em) {
-  .mq1-col-full {
+  /* -- Set up your grids -- */
+  .grid-wrap {
+    margin-left: -3em;
+    /* the same as your gutter */
+    overflow: hidden;
+    clear: both; }
+
+  .grid-col {
+    float: left;
+    padding-left: 3em;
+    /* this is your gutter between columns */
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .half-gutter {
+    margin-left: -1.5em; }
+    .half-gutter .grid-col {
+      padding-left: 1.5em; }
+
+  .bp1-col-full {
     width: 100%; }
 
-  .mq1-col-one-half {
+  .bp1-col-one-half {
     width: 50%; }
 
-  .mq1-col-one-third {
+  .bp1-col-one-third {
     width: 33.333%; }
 
-  .mq1-col-two-thirds {
+  .bp1-col-two-thirds {
     width: 66.666%; }
 
-  .mq1-col-one-quarter {
+  .bp1-col-one-quarter {
     width: 25%; }
 
-  .mq1-col-three-quarters {
+  .bp1-col-three-quarters {
     width: 75%; } }
 /* -- Media query 2 (mq2)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 48em) {
-  .mq2-col-full {
+  /* -- Set up your grids -- */
+  .grid-wrap {
+    margin-left: -3em;
+    /* the same as your gutter */
+    overflow: hidden;
+    clear: both; }
+
+  .grid-col {
+    float: left;
+    padding-left: 3em;
+    /* this is your gutter between columns */
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .half-gutter {
+    margin-left: -1.5em; }
+    .half-gutter .grid-col {
+      padding-left: 1.5em; }
+
+  .bp2-col-full {
     width: 100%; }
 
-  .mq2-col-one-half {
+  .bp2-col-one-half {
     width: 50%; }
 
-  .mq2-col-one-third {
+  .bp2-col-one-third {
     width: 33.333%; }
 
-  .mq2-col-two-thirds {
+  .bp2-col-two-thirds {
     width: 66.666%; }
 
-  .mq2-col-one-quarter {
+  .bp2-col-one-quarter {
     width: 25%; }
 
-  .mq2-col-three-quarters {
+  .bp2-col-three-quarters {
     width: 75%; } }
 /* -- Media query 3 (mq3)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 60em) {
-  .mq3-col-full {
+  /* -- Set up your grids -- */
+  .grid-wrap {
+    margin-left: -3em;
+    /* the same as your gutter */
+    overflow: hidden;
+    clear: both; }
+
+  .grid-col {
+    float: left;
+    padding-left: 3em;
+    /* this is your gutter between columns */
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .half-gutter {
+    margin-left: -1.5em; }
+    .half-gutter .grid-col {
+      padding-left: 1.5em; }
+
+  .bp3-col-full {
     width: 100%; }
 
-  .mq3-col-one-half {
+  .bp3-col-one-half {
     width: 50%; }
 
-  .mq3-col-one-third {
+  .bp3-col-one-third {
     width: 33.333%; }
 
-  .mq3-col-two-thirds {
+  .bp3-col-two-thirds {
     width: 66.666%; }
 
-  .mq3-col-one-quarter {
+  .bp3-col-one-quarter {
     width: 25%; }
 
-  .mq3-col-three-quarters {
+  .bp3-col-three-quarters {
     width: 75%; } }
