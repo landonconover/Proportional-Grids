@@ -14,9 +14,9 @@ Twitter	: http://twitter.com/mattberridge
 .lt-ie9 .container, {
 	width: 960px; }
 	
-@include grid-oldie-config();
+@include grid-config-oldie();
 // repeat for each set of grids you have
-@include grid-oldie-setup("oldie .col");
-@include grid-oldie-setup("oldie .bp1-col");
-@include grid-oldie-setup("oldie .bp2-col");
-@include grid-oldie-setup("oldie .bp3-col");
+@include grid-setup-oldie("oldie .col");
+@include grid-setup-oldie("oldie .bp1-col");
+@include grid-setup-oldie("oldie .bp2-col");
+@include grid-setup-oldie("oldie .bp3-col");

@@ -53,7 +53,7 @@ $half-gutter : $gutter / 2;
 }
 
 // account for no border-box in ie6/7
-@mixin grid-oldie-config {
+@mixin grid-config-oldie {
 
 	.oldie {
 		.#{$grid-wrap-class} {
@@ -71,7 +71,7 @@ $half-gutter : $gutter / 2;
 }
 
 // amend these widths for ie6/7
-@mixin grid-oldie-setup($namespace) {
+@mixin grid-setup-oldie($namespace) {
 
 	.#{$namespace}-full         	{ width: 99.95%; }
 	.#{$namespace}-one-half         { width: 47.45%; }
