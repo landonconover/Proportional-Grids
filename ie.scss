@@ -6,9 +6,9 @@ Twitter	: http://twitter.com/mattberridge
 @import "grids";
 
 // repeat for each set of grids you have
-@include setup-grid("mq1-col");
-@include setup-grid("mq2-col");
-@include setup-grid("mq3-col");
+@include setup-grid("bp1-col");
+@include setup-grid("bp2-col");
+@include setup-grid("bp3-col");
 
 /* -- Fix old IE
 ------------------------------------------------------------- */			
@@ -18,6 +18,6 @@ Twitter	: http://twitter.com/mattberridge
 @include fix-oldie();
 // repeat for each set of grids you have
 @include oldie-grid("oldie .col");
-@include oldie-grid("oldie .mq1-col");
-@include oldie-grid("oldie .mq2-col");
-@include oldie-grid("oldie .mq3-col");
+@include oldie-grid("oldie .bp1-col");
+@include oldie-grid("oldie .bp2-col");
+@include oldie-grid("oldie .bp3-col");

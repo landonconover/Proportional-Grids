@@ -63,7 +63,7 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 ------------------------------------------------------------- */			
 @media only screen and (min-width: 30em) {
  
-    @include setup-grid("mq1-col");
+    @include setup-grid("bp1-col");
     
 }
    
@@ -71,7 +71,7 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 ------------------------------------------------------------- */			
 @media only screen and (min-width: 48em) {
 
-    @include setup-grid("mq2-col");
+    @include setup-grid("bp2-col");
     
 }
 
@@ -79,6 +79,6 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 ------------------------------------------------------------- */			
 @media only screen and (min-width: 60em) {
 
-    @include setup-grid("mq3-col");
+    @include setup-grid("bp3-col");
     
 }
