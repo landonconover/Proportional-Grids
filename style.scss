@@ -57,28 +57,28 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 @include grid-config;	
 		
 /* -- If you want any columns to begin with -- */		
-@include setup-grid("col");
+@include grid-setup("col");
 
-/* -- Media query 1 (mq1)
+/* -- Breakpoint (.bp1)
 ------------------------------------------------------------- */			
 @media only screen and (min-width: 30em) {
  
-    @include setup-grid("bp1-col");
+    @include grid-setup("bp1-col");
     
 }
    
-/* -- Media query 2 (mq2)
+/* -- Breakpoint 2 (.bp2)
 ------------------------------------------------------------- */			
 @media only screen and (min-width: 48em) {
 
-    @include setup-grid("bp2-col");
+    @include grid-setup("bp2-col");
     
 }
 
-/* -- Media query 3 (mq3)
+/* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */			
 @media only screen and (min-width: 60em) {
 
-    @include setup-grid("bp3-col");
+    @include grid-setup("bp3-col");
     
 }

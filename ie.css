@@ -3,27 +3,6 @@ Author  : Boon
 URL     : http://builtbyboon.com
 Twitter	: http://twitter.com/mattberridge
 ---------------------------------------*/
-/* -- Set up your grids -- */
-.grid-wrap {
-  margin-left: -3em;
-  /* the same as your gutter */
-  overflow: hidden;
-  clear: both; }
-
-.grid-col {
-  float: left;
-  padding-left: 3em;
-  /* this is your gutter between columns */
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.half-gutter {
-  margin-left: -1.5em; }
-  .half-gutter .grid-col {
-    padding-left: 1.5em; }
-
 .bp1-col-full {
   width: 100%; }
 
@@ -42,27 +21,6 @@ Twitter	: http://twitter.com/mattberridge
 .bp1-col-three-quarters {
   width: 75%; }
 
-/* -- Set up your grids -- */
-.grid-wrap {
-  margin-left: -3em;
-  /* the same as your gutter */
-  overflow: hidden;
-  clear: both; }
-
-.grid-col {
-  float: left;
-  padding-left: 3em;
-  /* this is your gutter between columns */
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.half-gutter {
-  margin-left: -1.5em; }
-  .half-gutter .grid-col {
-    padding-left: 1.5em; }
-
 .bp2-col-full {
   width: 100%; }
 
@@ -79,45 +37,6 @@ Twitter	: http://twitter.com/mattberridge
   width: 25%; }
 
 .bp2-col-three-quarters {
-  width: 75%; }
-
-/* -- Set up your grids -- */
-.grid-wrap {
-  margin-left: -3em;
-  /* the same as your gutter */
-  overflow: hidden;
-  clear: both; }
-
-.grid-col {
-  float: left;
-  padding-left: 3em;
-  /* this is your gutter between columns */
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.half-gutter {
-  margin-left: -1.5em; }
-  .half-gutter .grid-col {
-    padding-left: 1.5em; }
-
-.bp3-col-full {
-  width: 100%; }
-
-.bp3-col-one-half {
-  width: 50%; }
-
-.bp3-col-one-third {
-  width: 33.333%; }
-
-.bp3-col-two-thirds {
-  width: 66.666%; }
-
-.bp3-col-one-quarter {
-  width: 25%; }
-
-.bp3-col-three-quarters {
   width: 75%; }
 
 /* -- Fix old IE

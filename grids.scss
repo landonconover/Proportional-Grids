@@ -33,30 +33,7 @@ $half-gutter : $gutter / 2;
 
 // set the proportions you want to use
 // namespace relates to the class prefix e.g. mq2-col to target media query 2
-@mixin setup-grid($namespace) {
-
-	/* -- Set up your grids -- */	
-		
-	.grid-wrap {    
-	    margin-left: -$gutter; /* the same as your gutter */
-	    overflow: hidden;
-	    clear: both; }
-	   
-	.grid-col {
-	    float: left;
-	    padding-left: $gutter; /* this is your gutter between columns */
-	    width: 100%;
-	    -webkit-box-sizing: border-box;
-	       -moz-box-sizing: border-box;
-	            box-sizing: border-box; }
-	
-	.half-gutter {
-		margin-left: -$half-gutter;
-	
-		.grid-col {
-			padding-left: $half-gutter; }
-	
-	}	
+@mixin grid-setup($namespace) {
 
 	.#{$namespace}-full         	{ width: 100%; }
 	.#{$namespace}-one-half         { width: 50%; }
@@ -64,10 +41,11 @@ $half-gutter : $gutter / 2;
 	.#{$namespace}-two-thirds       { width: 66.666%; }
 	.#{$namespace}-one-quarter      { width: 25%; }
 	.#{$namespace}-three-quarters   { width: 75%; }
+	
 }
 
 // account for no border-box in ie6/7
-@mixin fix-oldie {
+@mixin grid-oldie-config {
 
 	.oldie {
 		.grid-wrap {
@@ -81,14 +59,17 @@ $half-gutter : $gutter / 2;
 				margin-left: 0; }		
 		}
 	}
+	
 }
 
 // amend these widths for ie6/7
-@mixin oldie-grid($namespace) {
+@mixin grid-oldie-setup($namespace) {
+
 	.#{$namespace}-full         	{ width: 99.95%; }
 	.#{$namespace}-one-half         { width: 47.45%; }
 	.#{$namespace}-one-third        { width: 29.55%; }
 	.#{$namespace}-two-thirds       { width: 64.95%; }
 	.#{$namespace}-one-quarter      { width: 19.95%; }
 	.#{$namespace}-three-quarters   { width: 74.95%; }
+	
 }
