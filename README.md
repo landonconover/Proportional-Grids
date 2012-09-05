@@ -44,7 +44,7 @@ In this example, each `grid-col` starts life as a single column. The class `bp1-
 
 It's that simple, one grid system, one set of classes, wherever you want!
 
-1bp2-col1 is simply a namespace / prefix for that break point. You can call these whatever you like but I prefer to use numbers rather than being stuck to a device e.g. `tablet-col`.	
+`bp2-col` is simply a namespace / prefix for that break point. You can call these whatever you like but I prefer to use numbers rather than being stuck to a device e.g. `tablet-col`.	
 
 ## Internet Explorer
 
