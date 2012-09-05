@@ -2,7 +2,7 @@
 
 Don’t think widths, think proportions. A dead simple method of creating responsive fluid grids with fixed gutters. Use classes to set the proportions you want your columns to take at which breakpoint.
 
-Supports nested grids and requires no `class="first"` or `:first-child nonsense.` Even works in IE7 and below
+Supports nested grids and requires no `class="first"` or `:first-child` nonsense. **Even works in IE7 and below**
 
 **[Check out the demo](http://builtbyboon.com/posed/Proportional-Grids/)** or **[Read all about it](http://builtbyboon.com/blog/proportional-grids/)**
 
