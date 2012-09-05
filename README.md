@@ -8,9 +8,9 @@ Supports nested grids and requires no `class="first"` or `:first-child nonsense.
 
 [built by Boon](here: http://builtbyboon.com/) - given away free
 
-If you have questions or put this to use then [hit me up on Twitter])http://twitter.com/mattberridge).
+If you have questions or put this to use then [hit me up on Twitter](http://twitter.com/mattberridge)
 
-A shout must go out to Harry Roberts ([@csswizardry](http://twitter.com/csswizardry)) for pointing me in the right direction with the idea!
+*A shout must go out to Harry Roberts ([@csswizardry](http://twitter.com/csswizardry)) for pointing me in the right direction with the idea!*
 
 ## How it works
 
