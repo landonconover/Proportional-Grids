@@ -29,7 +29,7 @@ There is no `class="first"` to add to any of your columns because the gutter on 
 		   -moz-box-sizing: border-box;
 				box-sizing: border-box; }
 
-Classes are then used on each column to determine which proportion is taken at which break point:
+Classes are then used on each column to determine which proportion is taken at which breakpoint:
 
 	<div class="grid-wrap">
 		<div class="grid-col bp1-col-one-half bp2-col-two-thirds">
@@ -40,11 +40,11 @@ Classes are then used on each column to determine which proportion is taken at w
 		</div>
 	</div>
 
-In this example, each `grid-col` starts life as a single column. The class `bp1-col-one-half` means that column becomes one-half at break point 1. `bp2-col-two-thirds` means it becomes two-thirds at break point 2. And so on.
+In this example, each `grid-col` starts life as a single column. The class `bp1-col-one-half` means that column becomes one-half at breakpoint 1. `bp2-col-two-thirds` means it becomes two-thirds at breakpoint 2. And so on.
 
 It's that simple, one grid system, one set of classes, wherever you want!
 
-`bp2-col` is simply a namespace / prefix for that break point. You can call these whatever you like but I prefer to use numbers rather than being stuck to a device e.g. `tablet-col`.	
+`bp2-col` is simply a namespace / prefix for that breakpoint. You can call these whatever you like but I prefer to use numbers rather than being stuck to a device e.g. `tablet-col`.	
 
 ## Internet Explorer
 
@@ -52,4 +52,4 @@ Obviously IE8 and below does not support `@media` and IE7 and below does not sup
 
 ## What’s included
 
-Examples of 6 different grid configurations including blocked, nested, and one with smaller gutters (just by adding a single class to `.grid-wrap`). Sass files are provided which makes it far easier to compile your grid by including one mixin per break point and then repeating each one in `ie.scss`.
+Examples of 6 different grid configurations including blocked, nested, and one with smaller gutters (just by adding a single class to `.grid-wrap`). Sass files are provided which makes it far easier to compile your grid by including one mixin per breakpoint and then repeating each one in `ie.scss`.
