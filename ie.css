@@ -39,87 +39,85 @@ Twitter	: http://twitter.com/mattberridge
 .bp2-col-three-quarters {
   width: 75%; }
 
-/* -- Fix old IE
-------------------------------------------------------------- */
+.bp3-col-full {
+  width: 100%; }
+
+.bp3-col-one-half {
+  width: 50%; }
+
+.bp3-col-one-third {
+  width: 33.333%; }
+
+.bp3-col-two-thirds {
+  width: 66.666%; }
+
+.bp3-col-one-quarter {
+  width: 25%; }
+
+.bp3-col-three-quarters {
+  width: 75%; }
+
 .lt-ie9 .container {
   width: 960px; }
 
-.oldie .grid-wrap {
+/* -- IE7 or less
+------------------------------------------------------------- */
+.lt-ie8 .grid-wrap {
   margin-left: 0; }
-.oldie .grid-col {
+.lt-ie8 .grid-col {
   padding: 0;
   margin-left: 5%; }
-  .oldie .grid-col:first-child {
+  .lt-ie8 .grid-col:first-child {
     margin-left: 0; }
 
-.oldie .col-full {
+.lt-ie8 .col-full {
   width: 99.95%; }
-
-.oldie .col-one-half {
+.lt-ie8 .col-one-half {
   width: 47.45%; }
-
-.oldie .col-one-third {
+.lt-ie8 .col-one-third {
   width: 29.55%; }
-
-.oldie .col-two-thirds {
+.lt-ie8 .col-two-thirds {
   width: 64.95%; }
-
-.oldie .col-one-quarter {
+.lt-ie8 .col-one-quarter {
   width: 19.95%; }
-
-.oldie .col-three-quarters {
+.lt-ie8 .col-three-quarters {
   width: 74.95%; }
 
-.oldie .bp1-col-full {
+.lt-ie8 .bp1-col-full {
   width: 99.95%; }
-
-.oldie .bp1-col-one-half {
+.lt-ie8 .bp1-col-one-half {
   width: 47.45%; }
-
-.oldie .bp1-col-one-third {
+.lt-ie8 .bp1-col-one-third {
   width: 29.55%; }
-
-.oldie .bp1-col-two-thirds {
+.lt-ie8 .bp1-col-two-thirds {
   width: 64.95%; }
-
-.oldie .bp1-col-one-quarter {
+.lt-ie8 .bp1-col-one-quarter {
   width: 19.95%; }
-
-.oldie .bp1-col-three-quarters {
+.lt-ie8 .bp1-col-three-quarters {
   width: 74.95%; }
 
-.oldie .bp2-col-full {
+.lt-ie8 .bp2-col-full {
   width: 99.95%; }
-
-.oldie .bp2-col-one-half {
+.lt-ie8 .bp2-col-one-half {
   width: 47.45%; }
-
-.oldie .bp2-col-one-third {
+.lt-ie8 .bp2-col-one-third {
   width: 29.55%; }
-
-.oldie .bp2-col-two-thirds {
+.lt-ie8 .bp2-col-two-thirds {
   width: 64.95%; }
-
-.oldie .bp2-col-one-quarter {
+.lt-ie8 .bp2-col-one-quarter {
   width: 19.95%; }
-
-.oldie .bp2-col-three-quarters {
+.lt-ie8 .bp2-col-three-quarters {
   width: 74.95%; }
 
-.oldie .bp3-col-full {
+.lt-ie8 .bp3-col-full {
   width: 99.95%; }
-
-.oldie .bp3-col-one-half {
+.lt-ie8 .bp3-col-one-half {
   width: 47.45%; }
-
-.oldie .bp3-col-one-third {
+.lt-ie8 .bp3-col-one-third {
   width: 29.55%; }
-
-.oldie .bp3-col-two-thirds {
+.lt-ie8 .bp3-col-two-thirds {
   width: 64.95%; }
-
-.oldie .bp3-col-one-quarter {
+.lt-ie8 .bp3-col-one-quarter {
   width: 19.95%; }
-
-.oldie .bp3-col-three-quarters {
+.lt-ie8 .bp3-col-three-quarters {
   width: 74.95%; }

@@ -3,7 +3,7 @@
 //-------------------------------------------------------
 
 // this is the fixed gutter between columns
-$gutter: 3em;
+$grid-gutter: 3em;
 
 // this sets your class names
 $grid-wrap-class: grid-wrap;
@@ -12,18 +12,18 @@ $grid-col-class: grid-col;
 //-------------------------------------------------------
 // GRID MIXINS
 //-------------------------------------------------------
-$half-gutter : $gutter / 2;
+$half-gutter : $grid-gutter / 2;
 
 @mixin grid-config {
 
 	.#{$grid-wrap-class} {    
-	    margin-left: -$gutter; /* the same as your gutter */
+	    margin-left: -$grid-gutter; /* the same as your gutter */
 	    overflow: hidden;
 	    clear: both; }
 	   
 	.#{$grid-col-class} {
 	    float: left;
-	    padding-left: $gutter; /* this is your gutter between columns */
+	    padding-left: $grid-gutter; /* this is your gutter between columns */
 	    width: 100%;
 	    -webkit-box-sizing: border-box;
 	       -moz-box-sizing: border-box;
@@ -55,7 +55,7 @@ $half-gutter : $gutter / 2;
 // account for no border-box in ie6/7
 @mixin grid-config-oldie {
 
-	.oldie {
+	.lt-ie8 {
 		.#{$grid-wrap-class} {
 			margin-left: 0; }
 		
@@ -70,14 +70,16 @@ $half-gutter : $gutter / 2;
 	
 }
 
-// amend these widths for ie6/7
+// amend widths for ie6/7
 @mixin grid-setup-oldie($namespace) {
 
-	.#{$namespace}-full         	{ width: 99.95%; }
-	.#{$namespace}-one-half         { width: 47.45%; }
-	.#{$namespace}-one-third        { width: 29.55%; }
-	.#{$namespace}-two-thirds       { width: 64.95%; }
-	.#{$namespace}-one-quarter      { width: 19.95%; }
-	.#{$namespace}-three-quarters   { width: 74.95%; }
+	.lt-ie8 {
+		.#{$namespace}-full         	{ width: 99.95%; }
+		.#{$namespace}-one-half         { width: 47.45%; }
+		.#{$namespace}-one-third        { width: 29.55%; }
+		.#{$namespace}-two-thirds       { width: 64.95%; }
+		.#{$namespace}-one-quarter      { width: 19.95%; }
+		.#{$namespace}-three-quarters   { width: 74.95%; }
+	}
 	
 }
