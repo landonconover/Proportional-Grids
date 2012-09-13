@@ -89,17 +89,18 @@ $half-gutter : $grid-gutter / 2;
 // Mixins to work with http://goo.gl/uwyT6
 //-------------------------------------------------------
 
-// include grids-init to set up your grids with your class
+// include grids-init to set up your grids with your base class
 // i.e. @include grids-init("col");
 @mixin grids-init($class) {
 	
 	@include grid-config;
+	@include grid-setup($class);
 	
 	@if $old-ie {
 		@include grid-config-oldie;	
+		@include grid-setup-oldie($class);
 	}
 	
-	@include grid-setup($class);
 	
 }
 
