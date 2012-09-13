@@ -47,14 +47,12 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 /* -- Set up your grids -- */
 .grid-wrap {
   margin-left: -3em;
-  /* the same as your gutter */
   overflow: hidden;
   clear: both; }
 
 .grid-col {
   float: left;
   padding-left: 3em;
-  /* this is your gutter between columns */
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
