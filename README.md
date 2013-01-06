@@ -78,4 +78,4 @@ Instead of... (in `styles.scss`)
 	    @include grid-setup("bp1-col");
 	}
 
-...include your grids per-breakpoint using `@include respond-min(30em) { @include grid-include("bp1-col")` to pass each class to be used in your HTML.
+...include your grids per-breakpoint using `@include respond-min(30em) { @include grid-include("bp1-col")` to pass each breakpoint-specific class you want to use in your HTML.
