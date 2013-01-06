@@ -6,13 +6,30 @@
 $grid-gutter: 3em;
 
 // this sets your class names
-$grid-wrap-class: grid-wrap;
-$grid-col-class: grid-col;
+$grid-wrap-class: "grid-wrap";
+$grid-col-class: "grid-col";
+
+// reset for list grids
+ul.#{$grid-wrap-class},
+ol.#{$grid-wrap-class} {
+	padding-left: 0;
+	list-style: none;}
+
+li.#{$grid-col-class} {
+	margin-left: 0;
+	margin-bottom: 0; }
 
 //-------------------------------------------------------
 // GRID MIXINS
 //-------------------------------------------------------
-$half-gutter : $grid-gutter / 2;
+@mixin set-gutter($gutter) {
+
+	margin-left: -$gutter;
+
+	.#{$grid-col-class} {
+		padding-left: $gutter; }
+
+}
 
 @mixin grid-config {
 
@@ -28,14 +45,18 @@ $half-gutter : $grid-gutter / 2;
 	    -webkit-box-sizing: border-box;
 	       -moz-box-sizing: border-box;
 	            box-sizing: border-box; }
+
+	.large-gutter {
+		@include set-gutter($grid-gutter*2); }
 	
 	.half-gutter {
-		margin-left: -$half-gutter;
-	
-		.#{$grid-col-class} {
-			padding-left: $half-gutter; }
-	
-	}	
+		@include set-gutter($grid-gutter/2); }
+
+	.no-gutter {
+		@include set-gutter(0); }
+
+	.reset-gutter {
+		@include set-gutter($grid-gutter); }
 
 }	
 
@@ -43,12 +64,16 @@ $half-gutter : $grid-gutter / 2;
 // $namespace relates to the class prefix e.g. bp2-col to target breakpoint 2
 @mixin grid-setup($namespace) {
 
-	.#{$namespace}-full         	{ width: 100%; }
-	.#{$namespace}-one-half         { width: 50%; }
-	.#{$namespace}-one-third        { width: 33.333%; }
-	.#{$namespace}-two-thirds       { width: 66.666%; }
-	.#{$namespace}-one-quarter      { width: 25%; }
-	.#{$namespace}-three-quarters   { width: 75%; }
+	.#{$namespace}-full,
+	.#{$namespace}-set-full .#{$grid-col-class}       	{ width: 100%; }
+	.#{$namespace}-one-half,
+	.#{$namespace}-set-one-half .#{$grid-col-class}		{ width: 50%; }
+	.#{$namespace}-one-third,
+	.#{$namespace}-set-one-third .#{$grid-col-class}	{ width: 33.333%; }
+	.#{$namespace}-one-quarter,
+	.#{$namespace}-set-one-quarter .#{$grid-col-class}	{ width: 25%; }
+	.#{$namespace}-two-thirds       					{ width: 66.666%; }
+	.#{$namespace}-three-quarters   					{ width: 75%; }
 	
 }
 
@@ -74,12 +99,16 @@ $half-gutter : $grid-gutter / 2;
 @mixin grid-setup-oldie($namespace) {
 
 	.lt-ie8 {
-		.#{$namespace}-full         	{ width: 99.95%; }
-		.#{$namespace}-one-half         { width: 47.45%; }
-		.#{$namespace}-one-third        { width: 29.55%; }
-		.#{$namespace}-two-thirds       { width: 64.95%; }
-		.#{$namespace}-one-quarter      { width: 19.95%; }
-		.#{$namespace}-three-quarters   { width: 74.95%; }
+		.#{$namespace}-full,
+		.#{$namespace}-set-full .#{$grid-col-class}          	{ width: 99.95%; }
+		.#{$namespace}-one-half,
+		.#{$namespace}-set-one-half .#{$grid-col-class}         { width: 47.45%; }
+		.#{$namespace}-one-third,
+		.#{$namespace}-set-one-third .#{$grid-col-class}        { width: 29.55%; }
+		.#{$namespace}-two-thirds       						{ width: 64.95%; }
+		.#{$namespace}-one-quarter,
+		.#{$namespace}-set-one-quarter .#{$grid-col-class}      { width: 19.95%; }
+		.#{$namespace}-three-quarters   						{ width: 74.95%; }
 	}
 	
 }
@@ -105,7 +134,7 @@ $half-gutter : $grid-gutter / 2;
 }
 
 // include grids-include with your class for each breakpoint
-// e.g. respond-min(30em) { @include grid-include("bp1-col"); } 
+// e.g. @include respond-min(30em) { @include grid-include("bp1-col"); } 
 @mixin grid-include($class) {
 	
 	@include grid-setup($class);
