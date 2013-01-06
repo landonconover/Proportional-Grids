@@ -57,12 +57,9 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 		margin-bottom: 0; }
 	
 }
-	
-/* -- Set up your grids -- */
-@include grid-config;	
 		
-/* -- If you want any columns to begin with -- */		
-@include grid-setup("col");
+/* -- Setup grids with base class -- */		
+@include grids-init("col");
 
 /* -- Breakpoint (.bp1)
 ------------------------------------------------------------- */			

@@ -117,7 +117,8 @@ li.#{$grid-col-class} {
 // ADDED SUPPORT
 // Mixins to work with http://goo.gl/uwyT6
 //-------------------------------------------------------
-
+$old-ie: null !default;
+ 
 // include grids-init to set up your grids with your base class
 // i.e. @include grids-init("col");
 @mixin grids-init($class) {

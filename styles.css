@@ -58,7 +58,7 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
   .island :last-child {
     margin-bottom: 0; }
 
-/* -- Set up your grids -- */
+/* -- Setup grids with base class -- */
 .grid-wrap {
   margin-left: -3em;
   overflow: hidden;
@@ -92,7 +92,6 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
   .reset-gutter .grid-col {
     padding-left: 3em; }
 
-/* -- If you want any columns to begin with -- */
 .col-full,
 .col-set-full .grid-col {
   width: 100%; }

@@ -52,4 +52,20 @@ Obviously IE8 and below does not support `@media` and IE7 and below does not sup
 
 ## What’s included
 
-Examples of 6 different grid configurations including blocked, nested, and one with smaller gutters (just by adding a single class to `.grid-wrap`). Sass files are provided which makes it far easier to compile your grid by including one mixin per breakpoint and then repeating each one in `ie.scss`.
+Examples of 9 different grid configurations:
+
+- **Basic** : create a normal 2-column grid at any breakpoint
+- **Changing** : create a grid that changes from 1-column, to 2-column and then to 1/3rd and 2/3rds
+- **Jumping** : three columns where one jumps alongside the other at breakpoint 2
+- **Nested** : example of grids which can easily be nested!
+- **Smaller gutter** : adding the '.half-gutter' class to '.grid-wrap' to make the gutter half the size (you can change the base gutter value in 'proportional-grids.scss')
+- **Blocked** : using the '.island' wrapper to create columns with backgrounds
+- **No gutter** : adding the '.no-gutter' class to remove gutters entirely
+- **Complex grid system** : a mixture of the above, using the '.reset-gutter' to reset the gutter of a nested grid
+
+ including blocked, nested, and one with smaller gutters (just by adding a single class to `.grid-wrap`). Sass files are provided which makes it far easier to compile your grid by including one mixin per breakpoint and then repeating each one in `ie.scss`.
+
+## Added support
+
+Mixins provided to operate with [Jake Archibald's Sass-IE method](http://goo.gl/uwyT6), meaning grids for IE are *automatically* created with their media queries stripped out (no need for an 'ie.css' stylesheet here). Include your grids per-breakpoint using '@include respond-min(30em) { @include grid-include("bp1-col")' - passing each class to be used in your HTML.
+
