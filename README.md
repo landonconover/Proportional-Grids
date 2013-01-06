@@ -68,4 +68,4 @@ All Sass files are provided which makes it far easier to compile your grid by in
 
 ## Added support
 
-Mixins provided to operate with [Jake Archibald's Sass-IE method](http://goo.gl/uwyT6), meaning grids for IE are *automatically* created with their media queries stripped out (no need for an `ie.css` stylesheet here). Include your grids per-breakpoint using `@include respond-min(30em) { @include grid-include("bp1-col")` - passing each class to be used in your HTML.
+Mixins provided to operate with [Jake Archibald's Sass-IE method](http://goo.gl/uwyT6), meaning grids for IE are *automatically* created with their media queries stripped out (no need for an `ie.css` stylesheet here). Include your grids per-breakpoint using `@include respond-min(30em) { @include grid-include("bp1-col")` to pass each class to be used in your HTML.
