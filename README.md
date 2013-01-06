@@ -70,14 +70,12 @@ All Sass files are provided which makes it far easier to compile your grid by in
 
 Mixins have been added to work using [Jake Archibald's Sass-IE method](http://goo.gl/uwyT6), meaning grids for IE are *automatically* created with their media queries stripped out (so no need for an `ie.css` stylesheet).
 
-Instead of...
+Instead of... (in `styles.scss`)
 
 	/* -- Breakpoint (.bp1)
 	------------------------------------------------------------- */			
 	@media only screen and (min-width: 30em) {
-	 
 	    @include grid-setup("bp1-col");
-	    
 	}
 
 ...include your grids per-breakpoint using `@include respond-min(30em) { @include grid-include("bp1-col")` to pass each class to be used in your HTML.
