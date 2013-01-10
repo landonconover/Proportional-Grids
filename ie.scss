@@ -3,7 +3,7 @@ Author  : Boon
 URL     : http://builtbyboon.com
 Twitter	: http://twitter.com/mattberridge
 ---------------------------------------*/
-@import "grids";
+@import "proportional-grids.scss";
 
 // repeat for each set of grids you have
 @include grid-setup("bp1-col");
@@ -11,7 +11,7 @@ Twitter	: http://twitter.com/mattberridge
 @include grid-setup("bp3-col");
 
 // serve fixed-width to IE
-.lt-ie9 .container, {
+.lt-ie9 .container {
 	width: 960px; }
 
 /* -- IE7 or less

@@ -3,15 +3,6 @@ Author  : Boon
 URL     : http://builtbyboon.com
 Twitter	: http://twitter.com/mattberridge
 ---------------------------------------*/
-ul.grid-wrap,
-ol.grid-wrap {
-  padding-left: 0;
-  list-style: none; }
-
-li.grid-col {
-  margin-left: 0;
-  margin-bottom: 0; }
-
 body {
   margin: 0;
   font: 1em/1.5 sans-serif; }
@@ -91,6 +82,15 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
   margin-left: -3em; }
   .reset-gutter .grid-col {
     padding-left: 3em; }
+
+ul.grid-wrap,
+ol.grid-wrap {
+  padding-left: 0;
+  list-style: none; }
+
+li.grid-col {
+  margin-left: 0;
+  margin-bottom: 0; }
 
 .col-full,
 .col-set-full .grid-col {
