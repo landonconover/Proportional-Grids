@@ -1,3 +1,8 @@
+/*
+Author  : Boon
+URL     : http://builtbyboon.com
+Twitter	: http://twitter.com/mattberridge
+---------------------------------------*/
 .bp1-col-full,
 .bp1-col-set-full .grid-col {
   width: 100%; }
@@ -67,13 +72,15 @@
 .lt-ie9 .container {
   width: 960px; }
 
+/* -- IE7 or less
+------------------------------------------------------------- */
 .lt-ie8 .grid-wrap {
   margin-left: 0; }
 .lt-ie8 .grid-col {
   padding: 0;
   margin-left: 5%; }
-.lt-ie8:first-child {
-  margin-left: 0; }
+  .lt-ie8 .grid-col:first-child {
+    margin-left: 0; }
 
 .lt-ie8 .col-full,
 .lt-ie8 .col-set-full .grid-col {
